@@ -12,7 +12,7 @@ body {
     align-items: flex-start;
   }  
 
-.modal-show-button{
+.modal-open-button{
       background-color: white;
       padding: 1rem 2rem;
       border-radius: 2rem;
@@ -31,7 +31,7 @@ body {
     background-color: white;
     position: absolute;
     top: 50%;
-    width: 70rem;
+    width: 70%;
     padding: 3rem;
     border-radius: 5px;
     transform: translate(-50%, -50%); /*Moves the origin of the modal by half to the left and half to the top.*/
