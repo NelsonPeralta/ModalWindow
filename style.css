@@ -12,7 +12,7 @@ body {
     align-items: flex-start;
   }  
 
-.modal-visible{
+.modal-show-button{
       background-color: white;
       padding: 1rem 2rem;
       border-radius: 2rem;
@@ -21,4 +21,45 @@ body {
       font-weight: 600;
       margin: 3rem 1rem;
       cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.modal{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    width: 70rem;
+    padding: 3rem;
+    border-radius: 5px;
+    transform: translate(-50%, -50%); /*Moves the origin of the modal by half to the left and half to the top.*/
+    left: 50%;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    z-index: 10;
+}
+
+.modal-close-button{
+    background: none;
+    border: none;
+    position: absolute; /*positioned relative to the nearest positioned ancestor */
+    right: 2rem;
+    top: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+h1{
+    margin: 2rem 0rem;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    backdrop-filter: blur(2px);
+    z-index: 5;
 }
